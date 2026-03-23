@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Root Element -->
+    <xs:element name="courses">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="course" type="courseType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Course Type Definition -->
+    <xs:complexType name="courseType">
+        <xs:sequence>
+            <xs:element name="id" type="xs:integer"/>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="instructor" type="xs:string"/>
+            <xs:element name="duration" type="xs:string"/>
+            <xs:element name="rating" type="ratingType"/>
+            <xs:element name="reviews" type="xs:integer"/>
+            <xs:element name="price" type="priceType"/>
+            <xs:element name="level" type="levelType"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="curriculum" type="curriculumType"/>
+            <xs:element name="prerequisites" type="xs:string"/>
+            <xs:element name="certificateIncluded" type="booleanType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Price Type with currency attribute -->
+    <xs:complexType name="priceType">
+        <xs:simpleContent>
+            <xs:extension base="xs:decimal">
+                <xs:attribute name="currency" type="currencyType" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <!-- Currency Type -->
+    <xs:simpleType name="currencyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INR"/>
+            <xs:enumeration value="USD"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="GBP"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Rating Type -->
+    <xs:simpleType name="ratingType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="5"/>
+            <xs:fractionDigits value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Level Type -->
+    <xs:simpleType name="levelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Beginner"/>
+            <xs:enumeration value="Beginner to Intermediate"/>
+            <xs:enumeration value="Intermediate"/>
+            <xs:enumeration value="Intermediate to Advanced"/>
+            <xs:enumeration value="Advanced"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Boolean Type -->
+    <xs:simpleType name="booleanType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Curriculum Type -->
+    <xs:complexType name="curriculumType">
+        <xs:sequence>
+            <xs:element name="module" type="moduleType" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Module Type -->
+    <xs:complexType name="moduleType">
+        <xs:sequence>
+            <xs:element name="n" type="xs:string"/>
+            <xs:element name="lessons" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

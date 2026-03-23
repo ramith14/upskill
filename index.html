@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upskill | Online Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>LearnHub</h1>
+    <nav>
+        <a onclick="scrollToSection('home')">Home</a>
+        <a onclick="scrollToSection('courses')">Courses</a>
+        <a onclick="scrollToSection('details')">Details</a>
+        <a onclick="scrollToSection('login')">Login</a>
+        <a onclick="scrollToSection('contact')">Contact</a>
+    </nav>
+    <div class="nav-buttons">
+        <button onclick="scrollToSection('login')">Login</button>
+        <button class="register-btn" onclick="scrollToSection('login')">Register</button>
+    </div>
+</header>
+
+<section id="home">
+    <h2>Welcome to Upskill</h2>
+    <h4>Learn new skills from industry experts. Enroll in courses and start your learning journey today!</h4>
+    <img src="image.png" alt="Banner" class="banner-img">
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+    <div class="courses-container">
+        <button class="scroll-btn left" onclick="scrollCourses(-300)">&lt;</button>
+        <div class="horizontal-scroll" id="courseScroll">
+        </div>
+        <button class="scroll-btn right" onclick="scrollCourses(300)">&gt;</button>
+    </div>
+</section>
+
+<section id="details">
+    <h2>Course Details</h2>
+    <div id="courseDetailsContent">
+        <p style="text-align: center; color: #999;">Select a course to view details</p>
+    </div>
+</section>
+
+<section id="login">
+    <h2>Login or Register</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">Create an account or login to enroll in courses</p>
+    
+    <div class="form-container">
+        <div class="form-box">
+            <h3>Login</h3>
+            <form id="pageLoginForm">
+                <label for="pageLoginEmail">Email Address</label>
+                <input type="email" id="pageLoginEmail" required>
+                <div class="error-message"></div>
+
+                <label for="pageLoginPassword">Password</label>
+                <input type="password" id="pageLoginPassword" required>
+                <div class="error-message"></div>
+
+                <div class="success-message" id="pageLoginSuccess"></div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h3>Register</h3>
+            <form id="pageRegisterForm">
+                <label for="pageRegName">Full Name</label>
+                <input type="text" id="pageRegName" required>
+                <div class="error-message"></div>
+                <label for="pageRegEmail">Email Address</label>
+                <input type="email" id="pageRegEmail" required>
+                <div class="error-message"></div>
+                <label for="pageRegPassword">Password</label>
+                <input type="password" id="pageRegPassword" required>
+                <div class="error-message"></div>
+                <label for="pageRegConfirm">Confirm Password</label>
+                <input type="password" id="pageRegConfirm" required>
+                <div class="error-message"></div>
+                <div class="success-message" id="pageRegisterSuccess"></div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="form-container">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Address:</strong> Cbit, Hyderabad, India</p>
+            <p><strong>Email:</strong> support@upskill.com</p>
+            <p><strong>Phone:</strong> +91 9876543210</p>
+            <p><strong>Hours:</strong> Mon-Fri: 9 AM - 6 PM</p>
+        </div>
+        <div class="form-box">
+            <h3>Send Message</h3>
+            <form id="contactForm">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" required>
+                <div class="error-message"></div>
+
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" required>
+                <div class="error-message"></div>
+
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; font-family: Arial, sans-serif;" required></textarea>
+                <div class="error-message"></div>
+
+                <div class="success-message" id="contactSuccess"></div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2026 Upskill. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

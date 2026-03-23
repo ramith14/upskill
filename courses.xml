@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="courses.xsl"?>
+<courses>
+    <course>
+        <id>1</id>
+        <title>Web Development</title>
+        <instructor>John Doe</instructor>
+        <duration>8 weeks</duration>
+        <rating>4.8</rating>
+        <reviews>256</reviews>
+        <price currency="INR">4999</price>
+        <level>Beginner to Intermediate</level>
+        <description>Learn modern web development with HTML, CSS, JavaScript, React, and more.</description>
+        <curriculum>
+            <module>
+                <n>HTML5 &amp; Semantic Markup</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>CSS3 &amp; Responsive Design</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>JavaScript ES6+</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>React Framework</n>
+                <lessons>14</lessons>
+            </module>
+            <module>
+                <n>State Management</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>APIs Integration</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Deployment &amp; Hosting</n>
+                <lessons>6</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>Basic computer knowledge</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+
+    <course>
+        <id>2</id>
+        <title>Python Programming</title>
+        <instructor>Jane Smith</instructor>
+        <duration>6 weeks</duration>
+        <rating>4.9</rating>
+        <reviews>312</reviews>
+        <price currency="INR">3999</price>
+        <level>Beginner to Intermediate</level>
+        <description>Master Python from basics to advanced concepts with hands-on projects.</description>
+        <curriculum>
+            <module>
+                <n>Python Basics &amp; Syntax</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Data Structures</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>Object-Oriented Programming</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>File Handling</n>
+                <lessons>6</lessons>
+            </module>
+            <module>
+                <n>Django Framework</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>Database Management</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Real-world Projects</n>
+                <lessons>10</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>None - Beginner Friendly</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+
+    <course>
+        <id>3</id>
+        <title>Data Science</title>
+        <instructor>Alex Brown</instructor>
+        <duration>10 weeks</duration>
+        <rating>4.7</rating>
+        <reviews>198</reviews>
+        <price currency="INR">5999</price>
+        <level>Intermediate</level>
+        <description>Explore data science, machine learning, and advanced analytics techniques.</description>
+        <curriculum>
+            <module>
+                <n>Statistics Fundamentals</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Python for Data Science</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>Pandas &amp; NumPy</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Data Visualization</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Machine Learning Basics</n>
+                <lessons>14</lessons>
+            </module>
+            <module>
+                <n>Predictive Modeling</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>Project Portfolio</n>
+                <lessons>10</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>Python knowledge required</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+
+    <course>
+        <id>4</id>
+        <title>UI/UX Design</title>
+        <instructor>Sarah Wilson</instructor>
+        <duration>7 weeks</duration>
+        <rating>4.8</rating>
+        <reviews>275</reviews>
+        <price currency="INR">4499</price>
+        <level>Beginner</level>
+        <description>Master design principles, wireframing, and prototyping for modern interfaces.</description>
+        <curriculum>
+            <module>
+                <n>Design Principles</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Color Theory &amp; Typography</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Wireframing Techniques</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Prototyping with Figma</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>User Research</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Usability Testing</n>
+                <lessons>6</lessons>
+            </module>
+            <module>
+                <n>Portfolio Development</n>
+                <lessons>8</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>Creative mindset helpful</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+
+    <course>
+        <id>5</id>
+        <title>Mobile App Dev</title>
+        <instructor>Mike Johnson</instructor>
+        <duration>9 weeks</duration>
+        <rating>4.6</rating>
+        <reviews>142</reviews>
+        <price currency="INR">5499</price>
+        <level>Intermediate</level>
+        <description>Build iOS and Android apps using React Native and Flutter frameworks.</description>
+        <curriculum>
+            <module>
+                <n>React Native Basics</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Flutter Framework</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Navigation &amp; Routing</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>State Management</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>API Integration</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Device Features</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>App Store Deployment</n>
+                <lessons>6</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>JavaScript or Dart knowledge helpful</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+
+    <course>
+        <id>6</id>
+        <title>Cloud Computing</title>
+        <instructor>Emily Davis</instructor>
+        <duration>8 weeks</duration>
+        <rating>4.9</rating>
+        <reviews>289</reviews>
+        <price currency="INR">4799</price>
+        <level>Intermediate to Advanced</level>
+        <description>Master AWS, Azure, and Google Cloud platforms for enterprise solutions.</description>
+        <curriculum>
+            <module>
+                <n>Cloud Fundamentals</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>AWS Services</n>
+                <lessons>14</lessons>
+            </module>
+            <module>
+                <n>Azure Essentials</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Docker &amp; Containers</n>
+                <lessons>10</lessons>
+            </module>
+            <module>
+                <n>Kubernetes Orchestration</n>
+                <lessons>12</lessons>
+            </module>
+            <module>
+                <n>Cloud Security</n>
+                <lessons>8</lessons>
+            </module>
+            <module>
+                <n>Serverless Computing</n>
+                <lessons>8</lessons>
+            </module>
+        </curriculum>
+        <prerequisites>Basic Linux and networking knowledge</prerequisites>
+        <certificateIncluded>yes</certificateIncluded>
+    </course>
+</courses>
